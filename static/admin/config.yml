@@ -23,6 +23,7 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "calendar-event"}
       - {label: "Start", name: "date", widget: "datetime"}
       - {label: "End", name: "date", widget: "datetime"}
       - {label: "Summary", name: "summary", widget: "text"}
